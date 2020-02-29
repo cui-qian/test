@@ -39,7 +39,7 @@ $(function () {
         $.ajax({
             method: 'POST',
             // 必须的请求根路径拼接具体的url地址
-            url: 'http://www.liulongbin.top:3007/api/reguser',
+            url: '/api/reguser',
             // 指定请求的数据
             data: $(this).serialize(),
             success: function (res) {
@@ -62,7 +62,7 @@ $(function () {
         $.ajax({
             method: 'POST',
             // 必须的请求根路径拼接具体的url地址
-            url: 'http://www.liulongbin.top:3007/api/login',
+            url: '/api/login',
             // 指定请求的数据
             data: $(this).serialize(),
             success: function (res) {
@@ -73,7 +73,7 @@ $(function () {
                 // 切换到后台index.html
                 // 将服务器返回的token保存到本地存储
                 localStorage.setItem('token', res.token);
-                location.href = '/index.html';
+                location.href = '/test/index.html';
             }
         })
     })
