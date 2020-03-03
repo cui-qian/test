@@ -55,9 +55,12 @@
                                 class="layui-icon layui-icon-file-b"></i>文章管理</a>
                         <!-- dl是展开的子菜单 -->
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发表文章</a></dd>
+                            <dd><a href="article/art_cate.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章类别</a></dd>
+                            <dd><a href="article/art_list.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a href="article/art_pub.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>发表文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -78,10 +81,16 @@
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <!-- 默认指定src是图表页面 -->
+            <!-- 首页面板 -->
             <iframe name="fm" src="home/dashboard.html" frameborder="0"></iframe>
+            <!-- 个人中心面板 -->
             <iframe name="fm" src="user/user_info.html" frameborder="0"></iframe>
             <iframe name="fm" src="user/user_pwd.html" frameborder="0"></iframe>
             <iframe name="fm" src="user/user_avatar.html" frameborder="0"></iframe>
+            <!-- 文章管理面板 -->
+            <iframe name="fm" src="article/art_cate.html" frameborder="0"></iframe>
+            <iframe name="fm" src="article/art_list.html" frameborder="0"></iframe>
+            <iframe name="fm" src="article/art_pub.html" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
